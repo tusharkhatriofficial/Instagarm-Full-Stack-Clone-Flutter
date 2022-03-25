@@ -2,8 +2,12 @@
 
 Full Stack Instagram Clone made with ❤ using Flutter & Firebase.
 
-## Click on the link below to view the Overview video by Tushar Khatri
+## Click on the link below to view the Overview video by Tushar Khatri.
 [Overview Video](https://drive.google.com/file/d/1EL0mz7Z4vUfqjEijxHnr2JP-Ni9rx208/view?usp=sharing)
+## Click on the link below download the Apk file to try it out quickly on a real device.
+[Download Apk file](https://drive.google.com/file/d/1Y3A24hTVrmP4Kgj4q3IC2E398UJGaDqw/view?usp=sharing)
+## Click on the link below to view this web app live.
+[https://instagram-clone-dba0c.firebaseapp.com/](https://instagram-clone-dba0c.firebaseapp.com/)
 
 ## Mobile
 <img src="https://user-images.githubusercontent.com/64004539/160093711-7c52d2b3-36af-47d2-a96f-4c30ff0ab6bb.png" width="225"/> <img src="https://user-images.githubusercontent.com/64004539/160093765-df44df12-cf45-4012-8dab-18a3e71df7db.png" width="225"/> 
