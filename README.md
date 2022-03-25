@@ -5,6 +5,7 @@ Full Stack Instagram Clone made with ❤ using Flutter & Firebase.
 
 ![Apple iPhone 11 Pro Max](https://user-images.githubusercontent.com/64004539/160093711-7c52d2b3-36af-47d2-a96f-4c30ff0ab6bb.png)
 ![Apple iPhone 11 Pro Max (1)](https://user-images.githubusercontent.com/64004539/160093765-df44df12-cf45-4012-8dab-18a3e71df7db.png)
+<img src="https://user-images.githubusercontent.com/64004539/160093711-7c52d2b3-36af-47d2-a96f-4c30ff0ab6bb.png" width="425"/> <img src="https://user-images.githubusercontent.com/64004539/160093765-df44df12-cf45-4012-8dab-18a3e71df7db.png" width="425"/
 
 # Getting Started
 
