@@ -17,14 +17,14 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   if (kIsWeb) {
     await Firebase.initializeApp(
-      options: const FirebaseOptions(
-        apiKey: "AIzaSyDuHJad8G0KwAYaKr19Kv8MOqSqwYUo78A",
-        appId: "1:1014020396252:web:a56c8c610be33658d8d019",
-        messagingSenderId: "1014020396252",
-        projectId: "instagram-clone-dba0c",
-        storageBucket: "instagram-clone-dba0c.appspot.com",
-        measurementId: "G-MPDX5VLT5H",
-        authDomain: "instagram-clone-dba0c.firebaseapp.com",
+      options: const FirebaseOptions(//TODO Fill all of the empty values below from your firebase web project.
+        apiKey: "",
+        appId: "",
+        messagingSenderId: "",
+        projectId: "",
+        storageBucket: "",
+        measurementId: "",
+        authDomain: "",
       ),
     );
   } else {
