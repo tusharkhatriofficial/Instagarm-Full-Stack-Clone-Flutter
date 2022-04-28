@@ -19,13 +19,13 @@ void main() async {
     await Firebase.initializeApp(
       options: const FirebaseOptions(
         //TODO Fill all of the empty values below from your firebase web project.
-        apiKey: "",
-        appId: "",
-        messagingSenderId: "",
-        projectId: "",
-        storageBucket: "",
-        measurementId: "",
-        authDomain: "",
+          apiKey: "",
+          authDomain: "",
+          projectId: "",
+          storageBucket: "",
+          messagingSenderId: "",
+          appId: "",
+          measurementId: ""
       ),
     );
   } else {
@@ -46,6 +46,7 @@ class MyApp extends StatelessWidget {
         ),
       ],
       child: MaterialApp(
+        title: 'Instagram',
         debugShowCheckedModeBanner: false,
         theme: ThemeData.dark().copyWith(
           scaffoldBackgroundColor: kMobileBackgroundColor,

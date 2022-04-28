@@ -152,14 +152,18 @@ class _LoginScreenState extends State<LoginScreen> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Image(
-                      height: MediaQuery.of(context).size.height / 1.45,
-                      width: MediaQuery.of(context).size.width / 4,
+                      // height: MediaQuery.of(context).size.height / 1.45,
+                      // width: MediaQuery.of(context).size.width / 4,
+                      height: MediaQuery.of(context).size.height / 1,
+                      width: MediaQuery.of(context).size.width / 3,
                       image: const AssetImage('assets/images/loginimage1.png'),
                     ),
                     Container(
                       alignment: Alignment.center,
-                      height: MediaQuery.of(context).size.height / 1.7,
-                      width: MediaQuery.of(context).size.width / 5.00,
+                      // height: MediaQuery.of(context).size.height / 1.7,
+                      // width: MediaQuery.of(context).size.width / 5.00,
+                      height: MediaQuery.of(context).size.height ,
+                      width: MediaQuery.of(context).size.width / 4.00,
                       child: ListView(
                         padding: EdgeInsets.zero,
                         children: [
@@ -174,13 +178,15 @@ class _LoginScreenState extends State<LoginScreen> {
                             //below column is of signin form
                             child: Column(
                               children: [
-                                //heading instagram image
-                                Image(
-                                  width: (MediaQuery.of(context).size.width /
-                                          5.25) /
-                                      1.9,
-                                  image: const AssetImage(
-                                      'assets/images/loginheading.png'),
+                                Container(
+                                  height: 50,
+                                  width: (MediaQuery.of(context).size.width / 9),
+                                  decoration: const BoxDecoration(
+                                    image: DecorationImage(
+                                      image: AssetImage('assets/images/loginheading.png'),
+                                      fit: BoxFit.fill
+                                    ),
+                                  ),
                                 ),
                                 const SizedBox(
                                   height: 34,
@@ -194,7 +200,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                   obscureText: false,
                                 ),
                                 const SizedBox(
-                                  height: 5,
+                                  height: 10,
                                 ),
                                 // text field input for password
                                 WebTextFieldInput(
@@ -204,7 +210,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                   obscureText: true,
                                 ),
                                 const SizedBox(
-                                  height: 15,
+                                  height: 25,
                                 ),
                                 //login button
                                 InkWell(
@@ -233,7 +239,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                   ),
                                 ),
                                 const SizedBox(
-                                  height: 15,
+                                  height: 25,
                                 ),
                                 Row(
                                   mainAxisAlignment:
@@ -269,7 +275,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                     ),
                                   ],
                                 ),
-                                const SizedBox(height: 15),
+                                const SizedBox(height: 25),
                                 Row(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: const [
@@ -301,6 +307,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                     primary: Colors.black,
                                   ),
                                 ),
+                                const SizedBox(height: 15),
                               ],
                             ),
                           ),
@@ -346,6 +353,16 @@ class _LoginScreenState extends State<LoginScreen> {
                                   ),
                                 ],
                               )),
+                          const SizedBox(height: 10,),
+                          Container(alignment: Alignment.center,child: Text('Get the app.', style: TextStyle(color: kMobileBackgroundColor),)),
+                          const SizedBox(height: 10,),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              Image.network('https://www.instagram.com/static/images/appstore-install-badges/badge_ios_english-en.png/180ae7a0bcf7.png', height: 40,),
+                              Image.network('https://www.instagram.com/static/images/appstore-install-badges/badge_android_english-en.png/e9cd846dc748.png', height: 40,),
+                            ],
+                          ),
                         ],
                       ),
                     ),
