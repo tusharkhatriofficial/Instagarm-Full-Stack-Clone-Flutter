@@ -21,6 +21,7 @@ class WebTextFieldInput extends StatelessWidget {
       child: TextFormField(
         controller: emailController,
         cursorColor: Colors.black,
+        style: TextStyle(color: Colors.black, fontSize: 11, fontWeight: FontWeight.normal),
         decoration: InputDecoration(
           hintText: hintText,
           hintStyle: const TextStyle(
