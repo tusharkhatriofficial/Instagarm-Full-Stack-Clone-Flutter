@@ -25,6 +25,10 @@ This app is configured for Web, android and IOS
 
 ## Mandatory
 * In main.dart file fill out all the required keys left blank in FirebaseOptions(), These keys are important to run this app on web and you will get all this information by creating a Web app in your Firebase project. 
+* use the following command to run it on web without rendering errors:
+```
+flutter run -d chrome --web-renderer html
+```
 
 ## For Android
 * Place google-services.json file in android/app/
