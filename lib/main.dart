@@ -17,7 +17,8 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   if (kIsWeb) {
     await Firebase.initializeApp(
-      options: const FirebaseOptions(//TODO Fill all of the empty values below from your firebase web project.
+      options: const FirebaseOptions(
+        //TODO Fill all of the empty values below from your firebase web project.
         apiKey: "",
         appId: "",
         messagingSenderId: "",
