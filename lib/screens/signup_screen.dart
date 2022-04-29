@@ -360,7 +360,7 @@ class _SignupScreenState extends State<SignupScreen> {
                             ),
                             const SizedBox(height: 15),
                             InkWell(
-                              onTap: () {},
+                              onTap: signupUser,
                               child: Container(
                                 child: const Text(
                                   "Sign Up",
@@ -419,7 +419,7 @@ class _SignupScreenState extends State<SignupScreen> {
                             ),
                             GestureDetector(
                               onTap: () {
-                                Navigator.pushNamed(context, '/signup');
+                                Navigator.pushNamed(context, '/login');
                               },
                               child: Container(
                                 child: const Text(
