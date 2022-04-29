@@ -18,15 +18,14 @@ void main() async {
   if (kIsWeb) {
     await Firebase.initializeApp(
       options: const FirebaseOptions(
-        //TODO Fill all of the empty values below from your firebase web project.
+          //TODO Fill all of the empty values below from your firebase web project.
           apiKey: "",
           authDomain: "",
           projectId: "",
           storageBucket: "",
           messagingSenderId: "",
           appId: "",
-          measurementId: ""
-      ),
+          measurementId: ""),
     );
   } else {
     await Firebase.initializeApp();
