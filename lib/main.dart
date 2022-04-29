@@ -18,15 +18,14 @@ void main() async {
   if (kIsWeb) {
     await Firebase.initializeApp(
       options: const FirebaseOptions(
-        //TODO Fill all of the empty values below from your firebase web project.
+          //TODO Fill all of the empty values below from your firebase web project.
           apiKey: "",
           authDomain: "",
           projectId: "",
           storageBucket: "",
           messagingSenderId: "",
           appId: "",
-          measurementId: ""
-      ),
+          measurementId: ""),
     );
   } else {
     await Firebase.initializeApp();
@@ -56,33 +55,34 @@ class MyApp extends StatelessWidget {
           '/signup': (context) => SignupScreen(),
           // '/comments_screen': (context) => CommentsScreen(),
         },
-        home: StreamBuilder(
-          stream: FirebaseAuth.instance.authStateChanges(),
-          builder: (context, snapshot) {
-            if (snapshot.connectionState == ConnectionState.active) {
-              if (snapshot.hasData) {
-                return const ResponsiveLayout(
-                  mobileScreenLayout: MobileScreenLayout(),
-                  webScreenLayout: WebScreenLayout(),
-                );
-              } else if (snapshot.hasError) {
-                return Center(
-                  child: Text('${snapshot.error}'),
-                );
-              }
-            }
-            if (snapshot.connectionState == ConnectionState.waiting) {
-              return const Center(
-                child: CircularProgressIndicator(
-                  strokeWidth: 1,
-                  color: kPrimaryColor,
-                ),
-              );
-            }
-            return LoginScreen();
-          },
-        ),
+        // home: StreamBuilder(
+        //   stream: FirebaseAuth.instance.authStateChanges(),
+        //   builder: (context, snapshot) {
+        //     if (snapshot.connectionState == ConnectionState.active) {
+        //       if (snapshot.hasData) {
+        //         return const ResponsiveLayout(
+        //           mobileScreenLayout: MobileScreenLayout(),
+        //           webScreenLayout: WebScreenLayout(),
+        //         );
+        //       } else if (snapshot.hasError) {
+        //         return Center(
+        //           child: Text('${snapshot.error}'),
+        //         );
+        //       }
+        //     }
+        //     if (snapshot.connectionState == ConnectionState.waiting) {
+        //       return const Center(
+        //         child: CircularProgressIndicator(
+        //           strokeWidth: 1,
+        //           color: kPrimaryColor,
+        //         ),
+        //       );
+        //     }
+        //     return LoginScreen();
+        // },
+        home: SignupScreen(),
       ),
     );
+    // );
   }
 }
