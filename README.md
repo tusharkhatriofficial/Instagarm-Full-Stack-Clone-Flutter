@@ -1,4 +1,9 @@
-# Instagram Clone
+<center>
+<div style="text-align: center;">
+<img  align="right" alt="GitHub forks" src="https://img.shields.io/github/forks/tusharkhatriofficial/Instagarm-Full-Stack-Clone-Flutter?style=social"> 
+<img align="right"  alt="GitHub Repo stars" src="https://img.shields.io/github/stars/tusharkhatriofficial/Instagarm-Full-Stack-Clone-Flutter?style=social">
+</div>
+<h1>Instagram Clone</h1>
 
 Full Stack Instagram Clone made with ❤ using Flutter & Firebase.
 
